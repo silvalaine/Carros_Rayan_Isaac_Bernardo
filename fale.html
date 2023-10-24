@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <a><link rel="stylesheet" href="Config2.css"></a>
+    <style>
+        h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="mailto:informaticarayan00001@gmail.com" method="post" id="contato">
+            <fieldset id="usuário">
+                <legend>Identificação do Usuário</legend>
+                    <p>
+                        <label for="nome">Nome:</label><input type="text" name="tnome" id="nome" size="30" maxlength="50" placeholder="digite seu nome"></input></p>
+                        <p>
+                        <label for="senha">Senha:</label><input type="password" name="tsenha" id="senha" size="15" maxlength="10" placeholder="senha de 10 digitos"></input>
+                        </p>
+                        <p>
+                        <label for="email">E-mail:</label><input type="email" name="temail" id="email" size="35" maxlength="35" placeholder="digite seu email"></input>
+                        </p>
+                        <p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="tsexo" id="masc" checked></input><label for="masc">Masculino</label>
+                        </br>
+                            <input type="radio" name="tsexo" id="femi"></input><label for="femi">Feminino</label>
+                            <input type="radio" name="tsexo" id="pndz"></input><label for="pndz">Prefiro não dizer</label>
+                        </fieldset>
+                        </p>
+                        <p>
+                        <label for="nasc">Data de Nascimento:</label><input type="date" name="tnasc" id="nasc"></input>
+        
+                        </p>
+        
+            </fieldset>
+        
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                    <p>
+                    <label for="rua">Nome da Rua:</label><input type="text" name="trua" id="rua" size="30" maxlength="50" placeholder="avenida"></input>
+                    </p>
+                    <p>
+                    <label for="num">Número:</label><input type="number" name="tnum" id="num" min="0" max="9999" size="30" maxlength="50" placeholder="digite seu numero"></input>
+                    </p>
+                    <p>
+                    <label for="Est">Estado:</label><select name="tEst" id="Est" >
+                    <optgroup label="região Norte">
+                        <option value="AC">ACRE</option>
+                        <option value="AP">AMAPA</option>
+                        <option value="AM">AMAZONAS</option>
+                        <option value="PA">PARA</option>
+                        <option value="RO">RONDONIA</option>
+                        <option value="RR">RORAIMA</option>
+                        <option value="TO">TOCANTINS</option>
+                    </optgroup>
+                    <optgroup label="região Nordeste">
+                        <option value="AL">ALAGOAS</option>
+                        <option value="BA">BAHIA</option>
+                        <option value="CE">CEARA</option>
+                        <option value="MA">MARANHÃO</option>
+                        <option value="PB">PARAIBA</option>
+                        <option value="PE">PERNAMBUCO</option>
+                        <option value="PI">PIAUI</option>
+                        <option value="RN">RIO GRANDE DO NORTE</option>
+                        <option value="SE">SERGIPE</option>
+                    </optgroup>
+                    <optgroup label="região Centro-Oeste">
+                        <option value="MT">MATO GROSSO</option>
+                        <option value="MS">MATO GROSSO DO SUL</option>
+                        <option value="GO">Goiás</option>
+                    </optgroup>
+                        <optgroup label="região sudeste">
+                        <option value="RJ">RIO DE JANEIRO</option>
+                        <option value="SP" selected>SÃO PAULO</option>
+                        <option value="MG">MINAS GERAIS</option>
+                        <option value="ES">"Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="região sul">
+                        <option value="PR">PARANA</option>
+                        <option value="SC">SANTA CATARINA</option>
+                        <option value="RS">RIO GRANDE DO SUL</option>
+                    </optgroup>
+                    </select>
+                    </p>
+                    <p>
+                    <label for="Cid">Cidade:</label><input type="text" name="tCid" id="Cid" size="30" maxlength="50" placeholder="digite sua cidade"></input>
+                    </p>
+            </fieldset>
+        
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                    <p>
+                    <label for="Urg">Grau de Urgência:</label><input type="range" name="tUrg" min="0" max="10" step="2" id="Urg" size="30" maxlength="50" placeholder="digite sua cidade"></input>
+                    </p>
+                    <p>
+                    <label for="Msg">Mensagem:</label><textarea name="tMsg" id="Msg" cols="45" rows="5" placeholder="deixe sua Mensagem"></textarea>
+                    </p>
+        
+            </fieldset>
+            <fieldset id="pedido">
+                <legend>Dicas</legend>
+                    <p>
+                        <input type="checkbox" name="tped" id="ped"></input><label for="ped">Gostaria de adquirir uma dica quando possivel</label>
+                    </p>
+        
+                    <p>
+                    <label for="Qtd">Quantidade:</label><input type="number" name="tQtd" id="Qtd"  min="0" max="10" ></input>
+                    </p>
+        
+            </fieldset>
+        
+            <input type="submit" value="enviar">
+            <input type="reset"  value="limpar"><br>
+            <nav><a href="Index.html"></a>Voltar</nav>
+        </form>
+        
+    </main>
+    <footer id="rodape">
+        <h3>By:RN</h3>
+       
+            </footer>
+    
+    
+</body>
+</html>
